@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const inter = Inter({
@@ -27,7 +29,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <Navbar />
+        <main className="mx-auto max-w-content px-6 pt-20">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
