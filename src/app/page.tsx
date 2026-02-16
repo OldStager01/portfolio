@@ -1,11 +1,12 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
+import OpenSource from "@/components/OpenSource";
 import SectionWrapper from "@/components/SectionWrapper";
 import SectionHeading from "@/components/SectionHeading";
 
 const placeholderSections = [
-  { id: "experience", title: "Experience" },
-  { id: "projects", title: "Projects" },
   { id: "achievements", title: "Achievements" },
   { id: "education", title: "Education" },
   { id: "contact", title: "Get in Touch" },
@@ -16,6 +17,9 @@ export default function Home() {
     <>
       <Hero />
       <About />
+      <Experience />
+      <Projects />
+      <OpenSource />
 
       {placeholderSections.map((section) => (
         <SectionWrapper key={section.id} id={section.id}>
