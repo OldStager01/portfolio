@@ -24,6 +24,15 @@ const config: Config = {
       maxWidth: {
         content: "64rem",
       },
+      keyframes: {
+        "gentle-bounce": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(4px)" },
+        },
+      },
+      animation: {
+        "gentle-bounce": "gentle-bounce 2s ease-in-out infinite",
+      },
     },
   },
   plugins: [],

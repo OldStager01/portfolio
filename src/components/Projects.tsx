@@ -28,24 +28,20 @@ export default function Projects() {
     <SectionWrapper id="projects">
       <SectionHeading id="projects" title="Projects" />
 
-      <div className="mt-8 grid gap-6 sm:grid-cols-2">
+      <div className="mt-8 grid gap-6 md:grid-cols-2">
         {projects.map((project) => (
           <article
             key={project.name}
-            className="flex flex-col rounded-lg border border-border p-5 transition-colors hover:border-accent/40"
+            className="flex flex-col rounded-lg border border-border p-5 transition-colors hover:border-accent/40 focus-within:border-accent/40"
           >
-            <div className="flex items-start justify-between gap-3">
-              <div>
-                <h3 className="font-semibold text-foreground">
-                  {project.name}
-                </h3>
-                <p className="mt-0.5 text-sm font-medium text-accent">
-                  {project.tagline}
-                </p>
-              </div>
+            <div>
+              <h3 className="font-semibold text-foreground">{project.name}</h3>
+              <p className="mt-0.5 text-sm font-medium text-accent">
+                {project.tagline}
+              </p>
             </div>
 
-            <ul className="mt-3 space-y-1.5 flex-1">
+            <ul className="mt-3 flex-1 space-y-1.5">
               {project.description.map((point, i) => (
                 <li key={i} className="text-sm leading-relaxed text-muted">
                   {point}
@@ -70,7 +66,7 @@ export default function Projects() {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-foreground"
+                  className="group inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-sm"
                 >
                   Source
                   <ArrowUpRight />
@@ -81,7 +77,7 @@ export default function Projects() {
                   href={project.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-foreground"
+                  className="group inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-sm"
                 >
                   Live
                   <ArrowUpRight />

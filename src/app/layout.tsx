@@ -55,7 +55,6 @@ export const metadata: Metadata = {
   },
 };
 
-// JSON-LD structured data for Google rich results
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -90,8 +89,22 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans">
+        {/* Skip to content — visible only on focus */}
+        <a
+          href="#main-content"
+          className="fixed left-4 z-[100] -top-full rounded-md bg-accent px-4 py-2 text-sm font-medium text-white transition-all focus:top-4 focus-visible:outline-none"
+        >
+          Skip to main content
+        </a>
+
         <Navbar />
-        <main className="mx-auto max-w-content px-6 pt-20">{children}</main>
+        <main
+          id="main-content"
+          className="mx-auto max-w-content px-6 pt-20"
+          tabIndex={-1}
+        >
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
