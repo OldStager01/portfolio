@@ -98,6 +98,26 @@ export const projects: Project[] = [
     github: "https://github.com/OldStager01/cloud-autoscaler",
   },
   {
+    name: "Fintech Fraud Detection",
+    tagline:
+      "Real-time fraud detection dashboard with transaction monitoring and risk analytics",
+    description: [
+      "Built a React + Vite frontend using TanStack Query, Redux, and Radix UI with interactive fraud visualizations and real-time risk scoring.",
+      "Powered by a Rails API with PostgreSQL (Supabase), Solid Queue async jobs, SMTP alerts, SSL, and deployed on Render.",
+    ],
+    technologies: [
+      "React",
+      "Vite",
+      "Ruby on Rails",
+      "PostgreSQL",
+      "Supabase",
+      "Solid Queue",
+      "REST APIs",
+    ],
+    github: "https://github.com/<your-username>/fintech-fraud-detection",
+    website: "https://fintech-fraud-detection.vercel.app/",
+  },
+  {
     name: "Flicksta",
     tagline: "Curated Flickr image sharing platform",
     description: [
