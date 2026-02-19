@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     "TypeScript",
   ],
   authors: [{ name: "Tanmay Tambat" }],
+  alternates: {
+    canonical: siteUrl,
+  },
   openGraph: {
     title: "Tanmay Tambat — Software Engineer",
     description:

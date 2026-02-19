@@ -7,7 +7,7 @@ export const personal = {
   headline: "Software Engineering Intern at Josh Software",
   location: "Nashik, India",
   about:
-    "Final-year Computer Engineering student building production systems at Josh Software. I care about writing clean, maintainable code that solves real problems. Previously built real-time inspection software at Medhavyn Technologies, and won Smart India Hackathon 2024. I work best across the full stack — Node.js, React, TypeScript, and Python — and enjoy figuring out how to make things faster and more reliable.",
+    "Final-year Computer Engineering student at Josh Software, working on production systems. I have a strong passion for clean, maintainable code and understanding how systems behave over time. Previously built real-time inspection software at Medhavyn Technologies and won Smart India Hackathon 2024. Comfortable with Node.js, React, TypeScript, and Python; I enjoy debugging and performance work.",
   email: "tanmaytambat01@gmail.com",
   github: "https://github.com/OldStager01",
   linkedin: "https://www.linkedin.com/in/tanmay-tambat",
@@ -35,16 +35,18 @@ export const experience: Experience[] = [
     period: "Jan 2026 – Present",
     location: "Pune, India",
     description: [
-      // Update these bullets as your work progresses
-      "Working on production-grade software engineering projects.",
+      "Worked on production-grade backend and frontend features for client-facing systems.",
+      "Designed and implemented REST APIs and background workflows using Go, focusing on correctness and maintainability.",
+      "Contributed to frontend components in React.js, improving usability and fixing edge-case bugs.",
+      "Collaborated with senior engineers on code reviews, debugging production issues, and improving system reliability.",
     ],
-    technologies: [],
+    technologies: ["GoLang", "React.js", "AWS"],
   },
   {
     company: "Medhavyn Technologies",
     role: "Full-Stack Developer Intern",
     period: "Jun 2025 – Nov 2025",
-    location: "Remote",
+    location: "Nashik, India",
     description: [
       "Worked on a live industrial project for real-time part inspection and object detection integrated with an ERP system.",
       "Built full-stack features using Node.js, Express.js, TypeScript, and React.js with seamless frontend–backend integration.",
@@ -78,6 +80,24 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    name: "Cloud Autoscaler",
+    tagline:
+      "Real-time cluster autoscaling platform with metrics visualization",
+    description: [
+      "Developed a full-stack autoscaling platform with a concurrent Go backend, REST APIs, metrics collection, and CPU/memory-based scaling.",
+      "Built a real-time React + TypeScript dashboard and Dockerized the stack using Docker Compose, PostgreSQL, and TimescaleDB.",
+    ],
+    technologies: [
+      "Go",
+      "React",
+      "TypeScript",
+      "PostgreSQL",
+      "TimescaleDB",
+      "Docker",
+    ],
+    github: "https://github.com/OldStager01/cloud-autoscaler",
+  },
+  {
     name: "Flicksta",
     tagline: "Curated Flickr image sharing platform",
     description: [
@@ -90,7 +110,7 @@ export const projects: Project[] = [
   },
   {
     name: "Secure Banking Service App",
-    tagline: "SIH 2024 Winner — AI-powered banking platform",
+    tagline: "AI-powered banking platform",
     description: [
       "Developed a secure banking service app with offline face authentication and AI-powered ticket automation achieving 95%+ accuracy.",
       "Enforced SLAs and data validation using Zod across services.",
@@ -111,7 +131,7 @@ export const projects: Project[] = [
   },
   {
     name: "Institute Analysis & Ranking",
-    tagline: "AI-based classroom monitoring — Copyrighted",
+    tagline: "SIH 2024 Winner - AI-based classroom monitoring — Copyrighted",
     description: [
       "Built an AI-based real-time classroom monitoring system analyzing 30+ students per session using facial and activity detection.",
       "Delivered automated session analytics, improving instructor feedback by ~45%.",
@@ -145,8 +165,8 @@ export const projects: Project[] = [
 export const openSource = {
   project: "React Native Document Picker",
   role: "Contributor",
-  stat: "161K+ weekly downloads",
-  url: "https://www.npmjs.com/package/react-native-document-picker",
+  stat: "170K+ weekly downloads",
+  url: "https://react-native-documents.github.io/",
 } as const;
 
 // ============================================================
@@ -315,6 +335,13 @@ export const leadership: Leadership[] = [
     period: "2024 – 2025",
     description:
       "Led a team of 20+ members, organizing 5+ events and workshops with 600+ participants.",
+  },
+  {
+    title: "M.I.B.C.S. Club, K.K.W.I.E.E.R.",
+    role: "Core-Committee Member",
+    period: "2023 – 2024",
+    description:
+      "Organized 4+ events and workshops with 300+ participants, including coding competitions and tech talks.",
   },
   {
     title: "AWS EC2 & Git/GitHub Workshop",

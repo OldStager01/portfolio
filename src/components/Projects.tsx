@@ -1,6 +1,6 @@
 import SectionWrapper from "@/components/SectionWrapper";
 import SectionHeading from "@/components/SectionHeading";
-import { projects } from "@/data/portfolio";
+import { projects, personal } from "@/data/portfolio";
 
 function ArrowUpRight() {
   return (
@@ -86,6 +86,18 @@ export default function Projects() {
             </div>
           </article>
         ))}
+      </div>
+
+      <div className="mt-8 flex justify-center">
+        <a
+          href={personal.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center gap-2 rounded-lg border border-border px-5 py-2.5 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+        >
+          View more projects on GitHub
+          <ArrowUpRight />
+        </a>
       </div>
     </SectionWrapper>
   );
